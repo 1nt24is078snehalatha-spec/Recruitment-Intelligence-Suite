@@ -1,0 +1,46 @@
+{% extends "core/base.html" %} {% block content %}
+<section class="card">
+  <h2>Interview Results</h2>
+  <p>
+    Reports are generated after each round. Final decision is based on
+    cumulative performance.
+  </p>
+  <div class="result-grid">
+    <div class="result-card">
+      <h3>HR Round</h3>
+      <p class="score">Score: 82%</p>
+      <p class="label pass">Pass</p>
+      <ul>
+        <li>Strength: Communication clarity</li>
+        <li>Growth: Stakeholder influence</li>
+      </ul>
+    </div>
+    <div class="result-card">
+      <h3>Technical Round</h3>
+      <p class="score">Score: 76%</p>
+      <p class="label pass">Pass</p>
+      <ul>
+        <li>Strength: Django architecture</li>
+        <li>Growth: Scaling strategies</li>
+      </ul>
+    </div>
+    <div class="result-card">
+      <h3>Aptitude Round</h3>
+      <p class="score">Score: 68%</p>
+      <p class="label warn">Borderline</p>
+      <ul>
+        <li>MCQ: 7/10</li>
+        <li>Coding: 2/3</li>
+      </ul>
+    </div>
+  </div>
+  <div class="final-report">
+    <h3>Final Decision</h3>
+    <p><strong>Status:</strong> Pass</p>
+    <p>
+      <strong>Reason:</strong> Balanced performance across rounds with strong
+      technical depth.
+    </p>
+  </div>
+</section>
+{% endblock %}

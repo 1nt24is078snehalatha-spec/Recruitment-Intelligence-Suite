@@ -1,0 +1,22 @@
+{% extends "core/base.html" %} {% block content %}
+<section class="card">
+  <h2>Create your profile</h2>
+  <p>Sign up to start the automated recruitment flow.</p>
+  <form class="form-grid">
+    <label
+      >Full name
+      <input type="text" placeholder="Your name" required />
+    </label>
+    <label
+      >Email
+      <input type="email" placeholder="you@example.com" required />
+    </label>
+    <label
+      >Password
+      <input type="password" placeholder="Create a password" required />
+    </label>
+    <button type="submit" class="primary">Create account</button>
+  </form>
+  <p class="helper">Already registered? <a href="/login/">Log in</a>.</p>
+</section>
+{% endblock %}

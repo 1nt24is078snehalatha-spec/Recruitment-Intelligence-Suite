@@ -1,0 +1,15 @@
+{% extends "core/base.html" %} {% block content %}
+<section class="card">
+  <h2>HR Interview Chatbot</h2>
+  <p>
+    Answer conversational questions. Difficulty adapts based on your confidence
+    and responses.
+  </p>
+  <div id="chat-window" class="chat-window"></div>
+  <form id="hr-chat-form" class="chat-input">
+    <input type="text" placeholder="Type your response..." required />
+    <button type="submit" class="primary">Send</button>
+  </form>
+  <div class="warning" id="hr-warning"></div>
+</section>
+{% endblock %}

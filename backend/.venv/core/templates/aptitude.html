@@ -1,0 +1,22 @@
+{% extends "core/base.html" %} {% block content %}
+<section class="card">
+  <h2>Aptitude Assessment</h2>
+  <p>
+    Complete 10 MCQs and 3 coding prompts. You can pause and resume anytime.
+  </p>
+  <div class="pill-row">
+    <span class="pill">MCQ: 10</span>
+    <span class="pill">Coding: 3</span>
+    <span class="pill">Pause & Resume enabled</span>
+  </div>
+  <div class="controls">
+    <button class="ghost" id="pause-test">Pause Test</button>
+    <button class="primary" id="resume-test">Resume Test</button>
+    <button class="secondary" id="load-mcq">Load MCQs</button>
+    <button class="secondary" id="load-code">Load Coding</button>
+  </div>
+  <div id="question-container" class="question-container"></div>
+  <button class="primary" id="submit-aptitude">Submit Aptitude</button>
+  <div id="aptitude-result" class="status"></div>
+</section>
+{% endblock %}

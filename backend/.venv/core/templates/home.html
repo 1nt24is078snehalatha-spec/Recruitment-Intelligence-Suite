@@ -1,0 +1,57 @@
+{% extends "core/base.html" %} {% block content %}
+<section class="hero">
+  <div>
+    <h2>Welcome to your intelligent interview hub</h2>
+    <p>
+      Upload your resume, take adaptive assessments, and get instant reports
+      after every round.
+    </p>
+    <div class="cta-row">
+      <a class="primary" href="/aptitude/">Start Aptitude Test</a>
+      <a class="ghost" href="/interview/hr/">Begin HR Chatbot</a>
+    </div>
+  </div>
+  <div class="upload-card">
+    <h3>Resume Upload</h3>
+    <p>We tailor questions based on your skills and projects.</p>
+    <form id="resume-upload" class="form-grid" enctype="multipart/form-data">
+      <input type="file" name="resume" accept=".pdf,.doc,.docx" required />
+      <button type="submit" class="primary">Upload resume</button>
+    </form>
+    <div id="resume-status" class="status"></div>
+  </div>
+</section>
+
+<section class="grid">
+  <div class="card">
+    <h3>Aptitude Round</h3>
+    <p>10 MCQs + 3 coding prompts. Pause and resume anytime.</p>
+    <ul>
+      <li>Timer with auto-resume</li>
+      <li>Anti-cheat warnings</li>
+      <li>Instant score breakdown</li>
+    </ul>
+    <a class="secondary" href="/aptitude/">Open Aptitude</a>
+  </div>
+  <div class="card">
+    <h3>HR Interview</h3>
+    <p>Adaptive chatbot based on your resume and confidence signals.</p>
+    <ul>
+      <li>Behavioral insights</li>
+      <li>Culture fit evaluation</li>
+      <li>Warning on tab switch</li>
+    </ul>
+    <a class="secondary" href="/interview/hr/">Open HR Chatbot</a>
+  </div>
+  <div class="card">
+    <h3>Technical Interview</h3>
+    <p>Difficulty adjusts based on your responses and skill tags.</p>
+    <ul>
+      <li>Resume-informed questioning</li>
+      <li>Confidence-based branching</li>
+      <li>Copy-paste detection</li>
+    </ul>
+    <a class="secondary" href="/interview/technical/">Open Technical Chatbot</a>
+  </div>
+</section>
+{% endblock %}

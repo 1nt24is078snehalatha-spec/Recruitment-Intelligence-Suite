@@ -1,0 +1,15 @@
+{% extends "core/base.html" %} {% block content %}
+<section class="card">
+  <h2>Technical Interview Chatbot</h2>
+  <p>
+    Questions adapt based on your confidence. Resume context is used to
+    personalize prompts.
+  </p>
+  <div id="tech-chat-window" class="chat-window"></div>
+  <form id="tech-chat-form" class="chat-input">
+    <input type="text" placeholder="Type your response..." required />
+    <button type="submit" class="primary">Send</button>
+  </form>
+  <div class="warning" id="tech-warning"></div>
+</section>
+{% endblock %}
